@@ -7,12 +7,13 @@ const inter = Noto_Sans({ weight: "400", subsets: ["latin"] });
 
 interface Props {
   date: Date;
+  label: string;
 }
 
 export const getServerSideProps: GetServerSideProps<Props> = async (
   context
 ) => {
-  const { d, t } = context.query;
+  const { d, t, l } = context.query;
   let date = new Date();
 
   if (d) {
@@ -36,11 +37,12 @@ export const getServerSideProps: GetServerSideProps<Props> = async (
   return {
     props: {
       date,
+      label: l as string,
     },
   };
 };
 
-export default function Home({ date }: Props) {
+export default function Home({ date, label }: Props) {
   const [time, setTime] = useState(date);
   useEffect(() => {
     const interval = setInterval(() => {
@@ -52,9 +54,9 @@ export default function Home({ date }: Props) {
 
   return (
     <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
+      className={`flex min-h-screen flex-col items-center p-8 ${inter.className}`}
     >
-      <h1>Time Flies</h1>
+      <h1 className="text-3xl">{label || "Time Flies"}</h1>
       <div className="min-w-full">
         <Counter date={date} now={time} />
       </div>

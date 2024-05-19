@@ -1,15 +1,34 @@
+const MONTHS = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
+
 export const leadingZero = (n: number) => {
   return n < 10 ? `0${n}` : n;
 };
 
 export const formatUTCDate = (date: Date) => {
-  return date.toISOString().split("T")[0];
+  const year = date.getUTCFullYear();
+  const month = date.getUTCMonth();
+  const day = date.getUTCDate();
+  return `${MONTHS[month]} ${day}, ${year}`;
 };
 
 export const formatLocalDate = (date: Date) => {
-  return `${date.getFullYear()}-${leadingZero(
-    date.getMonth() + 1
-  )}-${leadingZero(date.getDate())}`;
+  const year = date.getFullYear();
+  const month = date.getMonth();
+  const day = date.getDate();
+  return `${MONTHS[month]} ${day}, ${year}`;
 };
 
 export const formatUTCTime = (date: Date) => {
