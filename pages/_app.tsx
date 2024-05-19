@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }: AppProps) {
         />
         <title>Time Flies</title>
       </Head>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </>
   );
 }
