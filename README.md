@@ -2,6 +2,8 @@
 
 > Use it for birthdays, anniversaries, deadlines, or any other important date in your life.
 
+### [time-flies.lipis.dev](htps://time-flies.lipis.dev)
+
 A nice countdown (or coundup) timer that shows everything in
 
 - seconds
