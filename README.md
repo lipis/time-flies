@@ -28,7 +28,7 @@ A nice countdown (or coundup) timer that shows everything in
 - [time-flies.lipis.dev/?d=2025-01-01](https://time-flies.lipis.dev/?d=2025-01-01)
 - [time-flies.lipis.dev/?d=2024-01-01](https://time-flies.lipis.dev/?d=2024-01-01)
 - [time-flies.lipis.dev/?d=2024-07-07&utc=09:00&l=Armenistis](https://time-flies.lipis.dev/?d=2024-07-07&utc=09:00&l=Armenistis)
-- [time-flies.lipis.dev/?d=2021-02-18&utc=20:55&l=Perseverance](time-flies.lipis.dev/?d=2021-02-18&utc=20:55&l=Perseverance)
+- [time-flies.lipis.dev/?d=2021-02-18&utc=20:55&l=Perseverance](https://time-flies.lipis.dev/?d=2021-02-18&utc=20:55&l=Perseverance)
 
 ## Development
 
