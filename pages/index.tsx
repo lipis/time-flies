@@ -13,7 +13,7 @@ interface Props {
 export const getServerSideProps: GetServerSideProps<Props> = async (
   context
 ) => {
-  const { d, t, l } = context.query;
+  const { d, utc, l } = context.query;
   let date = new Date();
 
   if (d) {
@@ -23,8 +23,8 @@ export const getServerSideProps: GetServerSideProps<Props> = async (
     }
   }
 
-  if (t) {
-    const time = t as string;
+  if (utc) {
+    const time = utc as string;
     const [hours, minutes] = time.split(":").map((n) => parseInt(n, 10));
     if (!isNaN(hours) && !isNaN(minutes)) {
       if (hours >= 0 && hours < 24 && minutes >= 0 && minutes < 60) {

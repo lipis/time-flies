@@ -10,12 +10,21 @@ A nice countdown (or coundup) timer that shows everything in
 - months
 - years
 
-## Examples
+## Usage
 
-- [time-flies.lipis.dev/?d=1982-07-08&t=12:00&l=Lipis's Life](https://time-flies.lipis.dev/?d=1982-07-08&t=12:00&l=Lipis%27%20Life)
+### URL parameters:
+
+- `d` - date in the format `YYYY-MM-DD`
+- `utc` - UTC time in the format `HH:MM`
+- `l` - label
+
+### Examples:
+
+- [time-flies.lipis.dev/?d=1982-07-08&utc=12:00&l=Lipis's Life](https://time-flies.lipis.dev/?d=1982-07-08&utc=12:00&l=Lipis%27%20Life)
 - [time-flies.lipis.dev/?d=2025-01-01](https://time-flies.lipis.dev/?d=2025-01-01)
 - [time-flies.lipis.dev/?d=2024-01-01](https://time-flies.lipis.dev/?d=2024-01-01)
-- [time-flies.lipis.dev/?d=2024-07-07&t=09:00&l=Armenistis](https://time-flies.lipis.dev/?d=2024-07-07&t=09:00&l=Armenistis)
+- [time-flies.lipis.dev/?d=2024-07-07&utc=09:00&l=Armenistis](https://time-flies.lipis.dev/?d=2024-07-07&utc=09:00&l=Armenistis)
+- [time-flies.lipis.dev/?d=2021-02-18&utc=20:55&l=Perseverance](time-flies.lipis.dev/?d=2021-02-18&utc=20:55&l=Perseverance)
 
 ## Development
 
