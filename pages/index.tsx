@@ -3,7 +3,7 @@ import { GetServerSideProps } from "next";
 import { Noto_Sans } from "next/font/google";
 import { useEffect, useState } from "react";
 
-const inter = Noto_Sans({ weight: "400", subsets: ["latin"] });
+const noto = Noto_Sans({ weight: "400", subsets: ["latin"] });
 
 interface Props {
   date: Date;
@@ -53,13 +53,20 @@ export default function Home({ date, label }: Props) {
   }, []);
 
   return (
-    <main
-      className={`flex min-h-screen flex-col items-center p-8 ${inter.className}`}
-    >
-      <h1 className="text-3xl">{label || "Time Flies"}</h1>
-      <div className="min-w-full">
+    <div className={`min-h-screen flex flex-col ${noto.className}`}>
+      <main className="flex-grow">
+        <header className="pt-4">
+          <h1 className="text-center text-3xl">{label || "Time Flies"}</h1>
+        </header>
         <Counter date={date} now={time} />
-      </div>
-    </main>
+      </main>
+
+      <footer className="border-t border-gray-700 text-center text-xs text-gray-500 p-4">
+        <p>
+          Made with ❤️ be Less is More |{" "}
+          <a href="https://github.com/lipis/time-flies">Source Code</a>
+        </p>
+      </footer>
+    </div>
   );
 }

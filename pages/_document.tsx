@@ -18,7 +18,7 @@ export default function Document() {
           `}
         </Script>
       </Head>
-      <body>
+      <body className="min-h-screen">
         <Main />
         <NextScript />
       </body>
