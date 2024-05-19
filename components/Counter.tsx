@@ -27,7 +27,7 @@ const Counter = ({ date, now }: Props) => {
         <LocalTime date={date} />
         <UTCTime date={date} />
       </div>
-      <hr />
+      <hr className="border border-gray-700" />
 
       <Number n={seconds} d={2} label="seconds" />
       <Number n={minutes} d={3} label="minutes" />
