@@ -61,7 +61,7 @@ export default function Home({ date, label }: Props) {
         <Counter date={date} now={time} />
       </main>
 
-      <footer className="border-t border-gray-700 text-center text-xs text-gray-500 p-4">
+      <footer className="border-t border-gray-700 text-center text-sm text-gray-500 p-4">
         <p>
           Made with ❤️ be Less is More |{" "}
           <a href="https://github.com/lipis/time-flies">Source Code</a>
