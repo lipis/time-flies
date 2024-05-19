@@ -22,17 +22,20 @@ const Counter = ({ date, now }: Props) => {
   const years = days / 365;
 
   return (
-    <div>
-      <UTCTime date={date} />
-      <LocalTime date={date} />
+    <div className="mt-4">
+      <div className="text-center">
+        <LocalTime date={date} />
+        <UTCTime date={date} />
+      </div>
+      <hr />
 
-      <Number n={seconds} d={2} />
-      <Number n={minutes} d={3} />
-      <Number n={hours} d={4} />
-      <Number n={days} d={5} />
-      <Number n={weeks} d={6} />
-      <Number n={months} d={7} />
-      <Number n={years} d={8} />
+      <Number n={seconds} d={2} label="seconds" />
+      <Number n={minutes} d={3} label="minutes" />
+      <Number n={hours} d={4} label="hours" />
+      <Number n={days} d={5} label="days" />
+      <Number n={weeks} d={6} label="weeks" />
+      <Number n={months} d={7} label="months" />
+      <Number n={years} d={8} label="years" />
     </div>
   );
 };

@@ -6,7 +6,7 @@ interface Props {
 
 const UTCTime = ({ date }: Props) => {
   return (
-    <h2>
+    <h2 className="text-sm text-gray-600 mb-4">
       UTC: {formatUTCDate(date)} @ {formatUTCTime(date)}
     </h2>
   );
