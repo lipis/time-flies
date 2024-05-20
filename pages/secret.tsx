@@ -19,7 +19,7 @@ export default function Secret() {
         <h1 className="text-center text-3xl">Secrets</h1>
       </header>
 
-      <div className="flex flex-col text-center">
+      <div className="flex flex-col text-center mt-4">
         {dates.map((d) => (
           <Link href={`/?d=${d.date}&utc=${d.utc}&l=${d.name}`} key={d.name}>
             {d.name}
