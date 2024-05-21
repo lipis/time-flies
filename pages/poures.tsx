@@ -1,48 +1,46 @@
+import Birthdays from "@/components/Birthdays";
 import Layout from "@/components/Layout";
-import { formatShortDate } from "@/lib/utils";
-import Link from "next/link";
 
-const dates = [
+const poures = [
   { name: "itsouk", date: "1983-09-14", utc: "12:00" },
-  { name: "kellis", date: "1982-11-15", utc: "12:00" },
-  { name: "kostakis", date: "1982-07-31", utc: "12:00" },
+  { name: "kellis", date: "1982-11-15", utc: "04:00" },
+  { name: "kostakis", date: "1982-07-31", utc: "06:00" },
   { name: "lipis", date: "1982-07-08", utc: "10:00" },
   { name: "samanat", date: "1981-05-25", utc: "12:00" },
   { name: "telis", date: "1982-11-27", utc: "12:00" },
   { name: "tim", date: "1982-11-11", utc: "08:00" },
-  { name: "topless", date: "1982-12-13", utc: "12:00" },
+  { name: "topless", date: "1982-12-13", utc: "14:20" },
+];
+
+const kids = [
+  { name: "alkioni", date: "2021-11-27", utc: "07:15" },
+  { name: "anastasia", date: "2019-12-03", utc: "18:45" },
+  { name: "athina", date: "2019-01-17", utc: "22:35" },
+  { name: "dima", date: "2016-12-14", utc: "13:00" },
+  { name: "dioni", date: "2024-05-14", utc: "12:49" },
+  { name: "elpida", date: "2014-01-30", utc: "23:00" },
+  //  { name: "konstantinos", date: "2023-02-07", utc: "12:00" },
+  //  { name: "vivi", date: "2012-01-08", utc: "12:00" },
+  { name: "maria", date: "2012-01-08", utc: "15:53" },
+  { name: "michalis", date: "2012-01-08", utc: "15:59" },
+  { name: "odysseus", date: "2023-02-07", utc: "22:15" },
+  { name: "leonidas", date: "2022-06-03", utc: "23:12" },
+  { name: "efi", date: "2023-12-28", utc: "16:01" },
 ];
 
 export default function Poures() {
   return (
     <Layout>
-      <header className="p-4">
-        <h1 className="text-center text-3xl">Poures Clan</h1>
-      </header>
+      <h1 className="text-center text-3xl text-gray-300 mt-6">Poures Clan</h1>
+      <Birthdays people={poures} />
 
-      <div className="grid grid-cols-3 gap-x-6 mt-4 max-w-lg m-auto text-nowrap">
-        <div className="text-end text-gray-500 mb-2">Name</div>
-        <div className="text-center text-gray-500">Date</div>
-        <div className="text-gray-500">UTC</div>
-        {dates
-          .sort((a, b) => (a.date.substring(4) > b.date.substring(4) ? 1 : -1))
-          .map((d) => (
-            <>
-              <Link
-                className="text-end text-blue-500"
-                href={`/?d=${d.date}&utc=${d.utc}&l=${d.name}`}
-                key={d.name}
-              >
-                {d.name}
-              </Link>
+      <h1 className="text-center text-3xl text-gray-300 mt-8">Kids</h1>
+      <Birthdays people={kids} />
 
-              <div className="text-center">
-                {formatShortDate(new Date(d.date))}
-              </div>
-              <div>{d.utc}</div>
-            </>
-          ))}
-      </div>
+      <hr className="border-gray-600 mt-6" />
+      <p className="text-gray-600 text-center mt-6">
+        All the datetimes are in UTC
+      </p>
     </Layout>
   );
 }
