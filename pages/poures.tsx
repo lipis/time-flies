@@ -1,5 +1,5 @@
 import Layout from "@/components/Layout";
-import { formatUTCDate } from "@/lib/utils";
+import { formatShortDate } from "@/lib/utils";
 import Link from "next/link";
 
 const dates = [
@@ -25,7 +25,7 @@ export default function Poures() {
         <div className="text-center text-gray-500">Date</div>
         <div className="text-gray-500">UTC</div>
         {dates
-          .sort((a, b) => (a.date > b.date ? 1 : -1))
+          .sort((a, b) => (a.date.substring(4) > b.date.substring(4) ? 1 : -1))
           .map((d) => (
             <>
               <Link
@@ -37,7 +37,7 @@ export default function Poures() {
               </Link>
 
               <div className="text-center">
-                {formatUTCDate(new Date(d.date))}
+                {formatShortDate(new Date(d.date))}
               </div>
               <div>{d.utc}</div>
             </>

@@ -13,6 +13,8 @@ const MONTHS = [
   "December",
 ];
 
+const MONTHS_SHORT = MONTHS.map((month) => month.slice(0, 3));
+
 export const leadingZero = (n: number) => {
   return n < 10 ? `0${n}` : n;
 };
@@ -39,4 +41,11 @@ export const formatUTCTime = (date: Date) => {
 
 export const formatLocalTime = (date: Date) => {
   return `${leadingZero(date.getHours())}:${leadingZero(date.getMinutes())}`;
+};
+
+export const formatShortDate = (date: Date) => {
+  const year = date.getUTCFullYear();
+  const month = date.getUTCMonth();
+  const day = date.getUTCDate();
+  return `${MONTHS_SHORT[month]} ${day}, ${year}`;
 };
