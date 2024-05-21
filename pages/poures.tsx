@@ -20,12 +20,12 @@ const kids = [
   { name: "dioni", date: "2024-05-14", utc: "12:49" },
   { name: "efi", date: "2023-12-28", utc: "16:01" },
   { name: "elpida", date: "2014-01-30", utc: "23:00" },
-  //  { name: "konstantinos", date: "2023-02-07", utc: "12:00" },
+  { name: "konstantinos", date: "2015-07-12", utc: "02:45" },
   { name: "leonidas", date: "2022-06-03", utc: "23:12" },
   { name: "maria", date: "2012-01-08", utc: "15:53" },
   { name: "michalis", date: "2012-01-08", utc: "15:59" },
   { name: "odysseus", date: "2023-02-07", utc: "22:15" },
-  //  { name: "vivi", date: "2012-01-08", utc: "12:00" },
+  { name: "vivi", date: "2018-01-25", utc: "15:20" },
 ];
 
 export default function Poures() {
