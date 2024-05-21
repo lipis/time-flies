@@ -19,7 +19,7 @@ const Counter = ({ date, now }: Props) => {
   const days = hours / 24;
   const weeks = days / 7;
   const months = days / 30;
-  const years = days / 365;
+  const years = days / 365.25;
 
   return (
     <div className="mt-4">

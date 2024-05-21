@@ -1,4 +1,5 @@
 import Counter from "@/components/Counter";
+import Layout from "@/components/Layout";
 import { GetServerSideProps } from "next";
 import { Noto_Sans } from "next/font/google";
 import { useEffect, useState } from "react";
@@ -53,20 +54,11 @@ export default function Home({ date, label }: Props) {
   }, []);
 
   return (
-    <div className={`min-h-screen flex flex-col ${noto.className}`}>
-      <main className="flex-grow">
-        <header className="pt-4">
-          <h1 className="text-center text-3xl">{label || "Time Flies"}</h1>
-        </header>
-        <Counter date={date} now={time} />
-      </main>
-
-      <footer className="border-t border-gray-700 text-center text-sm text-gray-500 p-4">
-        <p>
-          Made with ❤️ be Less is More |{" "}
-          <a href="https://github.com/lipis/time-flies">Source Code</a>
-        </p>
-      </footer>
-    </div>
+    <Layout>
+      <header className="pt-4">
+        <h1 className="text-center text-3xl">{label || "Time Flies"}</h1>
+      </header>
+      <Counter date={date} now={time} />
+    </Layout>
   );
 }
