@@ -13,7 +13,7 @@ const Layout = ({ children }: Props) => {
 
       <footer className="border-t border-gray-700 text-center text-sm text-gray-500 p-4">
         <p>
-          Made with ❤️ be Less is More |{" "}
+          Made with ❤️ by Less is More |{" "}
           <a href="https://github.com/lipis/time-flies">Source Code</a>
         </p>
       </footer>
