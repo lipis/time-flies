@@ -3,7 +3,7 @@ import { formatUTCDate } from "@/lib/utils";
 import Link from "next/link";
 
 const dates = [
-  { name: "itsouk", date: "1983-09-14", utc: "14:00" },
+  { name: "itsouk", date: "1983-09-14", utc: "12:00" },
   { name: "kellis", date: "1982-11-15", utc: "12:00" },
   { name: "kostakis", date: "1982-07-31", utc: "12:00" },
   { name: "lipis", date: "1982-07-08", utc: "10:00" },
@@ -16,11 +16,11 @@ const dates = [
 export default function Poures() {
   return (
     <Layout>
-      <header className="pt-4">
+      <header className="p-4">
         <h1 className="text-center text-3xl">Poures Clan</h1>
       </header>
 
-      <div className="grid grid-cols-3 gap-x-6 mt-4 max-w-lg m-auto">
+      <div className="grid grid-cols-3 gap-x-6 mt-4 max-w-lg m-auto text-nowrap">
         <div className="text-end text-gray-500 mb-2">Name</div>
         <div className="text-center text-gray-500">Date</div>
         <div className="text-gray-500">UTC</div>
