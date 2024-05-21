@@ -40,9 +40,9 @@ export default function Poures() {
       <hr className="border-gray-600 mt-6" />
 
       <p className="text-gray-600 text-center mt-6">
-        All the datetimes are in UTC
+        Click on the name to see it in your local time.
       </p>
-      <p className="text-center text-gray-400">
+      <p className="text-center text-gray-400 mt-4">
         <a href="https://github.com/lipis/time-flies/blob/main/pages/poures.tsx">
           Edit on GitHub
         </a>
