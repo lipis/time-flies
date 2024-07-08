@@ -4,7 +4,8 @@ import Layout from "@/components/Layout";
 const poures = [
   { name: "itsouk", date: "1983-09-14", utc: "12:00" },
   { name: "kellis", date: "1982-11-15", utc: "04:00" },
-  { name: "kostakis", date: "1982-07-31", utc: "06:00" },
+  { name: "lef", date: "1980-01-31", utc: "04:00" },
+  { name: "kostakis", date: "1982-07-31", utc: "13:00" },
   { name: "lipis", date: "1982-07-08", utc: "10:00" },
   { name: "samanat", date: "1981-05-25", utc: "04:00" },
   { name: "telis", date: "1982-11-27", utc: "11:30" },
