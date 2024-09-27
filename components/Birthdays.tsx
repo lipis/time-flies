@@ -16,7 +16,7 @@ const Birthdays = ({ people }: Props) => {
       <div className="text-center text-gray-500">Date</div>
       <div className="text-gray-500">UTC</div>
       {people
-        .sort((a, b) => (a.date > b.date ? 1 : -1))
+        .sort((a, b) => (new Date(`${a.date}T${a.utc}`).getTime() - new Date(`${b.date}T${b.utc}`).getTime()))
         .map((d) => (
           <>
             <Link
