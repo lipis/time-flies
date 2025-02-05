@@ -9,6 +9,7 @@ const poures = [
   { name: "kostakis", date: "1982-07-31", utc: "13:00" },
   { name: "lipis", date: "1982-07-08", utc: "10:00" },
   { name: "samanat", date: "1981-05-25", utc: "04:00" },
+  { name: "renjikas", date: "1987-05-18", utc: "10:00" },
   { name: "telis", date: "1982-11-27", utc: "11:30" },
   { name: "tim", date: "1982-11-11", utc: "09:00" },
   { name: "topless", date: "1982-12-13", utc: "14:20" },
