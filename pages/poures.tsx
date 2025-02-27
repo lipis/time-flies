@@ -3,6 +3,7 @@ import Layout from "@/components/Layout";
 
 const poures = [
   { name: "itsouk", date: "1983-09-14", utc: "12:00" },
+  { name: "mike", date: "1979-02-26", utc: "12:00"},
   { name: "guru", date: "1979-09-04", utc: "12:00" },
   { name: "kellis", date: "1982-11-15", utc: "04:00" },
   { name: "lef", date: "1980-01-31", utc: "04:00" },
