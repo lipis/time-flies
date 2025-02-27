@@ -2,8 +2,8 @@ import Birthdays from "@/components/Birthdays";
 import Layout from "@/components/Layout";
 
 const poures = [
-  { name: "bakis", date: "1982-09-20", utc: "10:15" },
-  { name: "geo", date: "1982-10-13", utc: "11:00" },
+  { name: "bakis", date: "1982-09-20", utc: "08:15" },
+  { name: "geo", date: "1982-10-13", utc: "09:00" },
   { name: "guru", date: "1979-09-04", utc: "12:00" },
   { name: "itsouk", date: "1983-09-14", utc: "12:00" },
   { name: "kellis", date: "1982-11-15", utc: "04:00" },
@@ -19,21 +19,21 @@ const poures = [
 ];
 
 const kids = [
-  { name: "aggeliki", date: "2021-03-20", utc: "15:00" },
+  { name: "aggeliki", date: "2021-03-20", utc: "10:00" },
   { name: "alkioni", date: "2021-11-27", utc: "07:15" },
   { name: "anastasia", date: "2019-12-03", utc: "18:45" },
   { name: "athina", date: "2019-01-17", utc: "22:35" },
   { name: "dimitris", date: "2016-12-14", utc: "13:00" },
   { name: "dioni", date: "2024-05-14", utc: "12:49" },
   { name: "efi", date: "2023-12-28", utc: "16:01" },
-  { name: "elisavet", date: "2024-05-28", utc: "20:10" },
+  { name: "elisavet", date: "2024-05-28", utc: "15:10" },
   { name: "elpida", date: "2014-01-30", utc: "23:00" },
   { name: "konstantinos", date: "2015-07-12", utc: "02:45" },
   { name: "leonidas", date: "2022-06-03", utc: "23:12" },
   { name: "maria", date: "2012-01-08", utc: "15:53" },
   { name: "michalis", date: "2012-01-08", utc: "15:59" },
   { name: "odysseus", date: "2023-02-07", utc: "22:15" },
-  { name: "orestis", date: "2024-09-03", utc: "23:00" },
+  { name: "orestis", date: "2024-09-03", utc: "20:00" },
   { name: "vivi", date: "2018-01-25", utc: "15:20" },
 ];
 
