@@ -13,6 +13,8 @@ const poures = [
   { name: "telis", date: "1982-11-27", utc: "11:30" },
   { name: "tim", date: "1982-11-11", utc: "09:00" },
   { name: "topless", date: "1982-12-13", utc: "14:20" },
+  { name: "geo", date: "1982-10-13", utc: "11:00"},
+  { name: "bakis", date: "1982-09-20", utc: "10:15"},
 ];
 
 const kids = [
@@ -26,9 +28,12 @@ const kids = [
   { name: "konstantinos", date: "2015-07-12", utc: "02:45" },
   { name: "leonidas", date: "2022-06-03", utc: "23:12" },
   { name: "maria", date: "2012-01-08", utc: "15:53" },
+  { name: "aggeliki", date: "2021-03-20", utc: "15:00"},
   { name: "michalis", date: "2012-01-08", utc: "15:59" },
   { name: "odysseus", date: "2023-02-07", utc: "22:15" },
+  { name: "elisavet", date: "2024-05-28", utc: "20:10" },
   { name: "vivi", date: "2018-01-25", utc: "15:20" },
+  { name: "orestis", date: "2014-09-03", utc: "23:00" }
 ];
 
 export default function Poures() {
