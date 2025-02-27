@@ -33,7 +33,7 @@ const kids = [
   { name: "maria", date: "2012-01-08", utc: "15:53" },
   { name: "michalis", date: "2012-01-08", utc: "15:59" },
   { name: "odysseus", date: "2023-02-07", utc: "22:15" },
-  { name: "orestis", date: "2014-09-03", utc: "23:00" },
+  { name: "orestis", date: "2024-09-03", utc: "23:00" },
   { name: "vivi", date: "2018-01-25", utc: "15:20" },
 ];
 
